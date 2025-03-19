@@ -1,0 +1,239 @@
+-- Insertar direcciones de Cataluña en la tabla
+INSERT INTO Direccion (calle1, calle2, CP, Localidad, pais) 
+VALUES 
+('Carrer Major', '12', '08001', 'Barcelona', 'España'),
+('Carrer del Mercat', '5', '08002', 'Barcelona', 'España'),
+('Carrer de la Plaça', '18', '08003', 'Barcelona', 'España'),
+('Avinguda Diagonal', '100', '08019', 'Barcelona', 'España'),
+('Carrer de Sant Jaume', '7', '08020', 'Barcelona', 'España'),
+('Carrer de Gràcia', '45', '08012', 'Barcelona', 'España'),
+('Carrer de Sants', '150', '08028', 'Barcelona', 'España'),
+('Carrer de Ferran', '20', '17001', 'Girona', 'España'),
+('Plaça de la Vila', '3', '08800', 'Vilanova i la Geltrú', 'España'),
+('Carrer del Sol', '8', '08172', 'Sant Cugat del Vallès', 'España'),
+('Carrer Major', '23', '08302', 'Mataró', 'España'),
+('Avinguda Diagonal', '200', '43001', 'Tarragona', 'España'),
+('Carrer del Mar', '10', '43820', 'Calafell', 'España'),
+('Carrer de la Riera', '5', '08398', 'Santa Susanna', 'España'),
+('Carrer de Pau Casals', '15', '43201', 'Reus', 'España'),
+('Plaça del Ajuntament', '1', '17004', 'Salt', 'España'),
+('Carrer de Sant Antoni', '2', '08340', 'Vilassar de Mar', 'España'),
+('Carrer de la Pau', '30', '08320', 'El Masnou', 'España'),
+('Carrer del Raval', '8', '08241', 'Manresa', 'España'),
+('Carrer Major', '50', '08902', 'Hospitalet de Llobregat', 'España'),
+('Carrer de la Plaça', '6', '43003', 'Salou', 'España'),
+('Carrer de la Marina', '4', '08870', 'Sitges', 'España'),
+('Carrer de la Marquesa', '3', '08810', 'Sant Pere de Ribes', 'España'),
+('Carrer de la Església', '12', '08310', 'Argentona', 'España'),
+('Carrer del Centre', '25', '08850', 'Gavà', 'España'),
+('Carrer Major', '14', '08190', 'Sant Cugat Sesgarrigues', 'España'),
+('Carrer del Forn', '7', '08759', 'Vilanova del Camí', 'España'),
+('Carrer de la Estació', '2', '08140', 'Caldes de Montbui', 'España');
+
+
+-- Insertar direcciones fuera de Cataluña en la tabla Direccion
+INSERT INTO direccion (calle1, calle2, CP, Localidad, pais) 
+VALUES 
+('Calle Mayor', '3', '28013', 'Madrid', 'España'),
+('Calle Gran Vía', '15', '28013', 'Madrid', 'España'),
+('Calle del Sol', '10', '41001', 'Sevilla', 'España'),
+('Avenida de la Constitución', '45', '41004', 'Sevilla', 'España'),
+('Calle Real', '20', '28001', 'Toledo', 'España'),
+('Plaza Mayor', '1', '37002', 'Salamanca', 'España'),
+('Paseo del Prado', '8', '28014', 'Madrid', 'España'),
+('Calle de la Libertad', '5', '46001', 'Valencia', 'España'),
+('Plaza de España', '12', '50001', 'Zaragoza', 'España'),
+('Calle Ancha', '30', '41003', 'Sevilla', 'España'),
+('Calle Mayor', '40', '50003', 'Zaragoza', 'España'),
+('Paseo de la Castellana', '200', '28046', 'Madrid', 'España'),
+('Calle Real', '50', '45001', 'Toledo', 'España'),
+('Avenida de la Victoria', '3', '41002', 'Sevilla', 'España'),
+('Calle del Carmen', '15', '28013', 'Madrid', 'España'),
+('Paseo de la Marina', '25', '15001', 'A Coruña', 'España'),
+('Plaza de la Merced', '8', '29012', 'Málaga', 'España'),
+('Calle del Príncipe', '10', '38001', 'Santa Cruz de Tenerife', 'España'),
+('Calle Mayor', '2', '03002', 'Alicante', 'España'),
+('Avenida de la Constitución', '1', '41001', 'Sevilla', 'España');
+
+
+-- Insertar departamentos en la tabla
+INSERT INTO Departamento (Descripcion, Servicios) 
+VALUES 
+('Recepción', 'Registro de huéspedes, Asistencia al cliente, Gestión de reservas'),
+('Mantenimiento', 'Mantenimiento de instalaciones, Reparaciones, Limpieza'),
+('Cocina', 'Preparación de alimentos, Cocina en restaurante, Catering'),
+('Limpieza', 'Limpieza de habitaciones, Limpieza de áreas comunes, Lavandería'),
+('Administración', 'Contabilidad, Recursos humanos, Gestión financiera');
+
+
+-- Insertar empleados en la tabla
+INSERT INTO Empleado (nombre, apellido1, apellido2, telefono, mail, puesto, documentoid, observaciones, usuario, password, direccionid, departmentoid) 
+VALUES 
+('Juan', 'González', 'López', '123456789', 'juangonzalez@gmail.es', 'Recepcionista', '12345678A', 'Turno de tarde', 'juangl', 'jgl', 1, 1),
+('María', 'Martínez', 'Fernández', '987654321', 'mariamartinez@gmail.es', 'Recepcionista', '87654321B', 'Turno de mañana', 'mariamf', 'mmf', 2, 1),
+('Carlos', 'Sánchez', 'Pérez', '654987321', 'carlossanchez@gmail.es', 'Recepcionista', '76543218C', 'Turno de noche', 'carlossp', 'csp', 3, 1),
+('Ana', 'López', 'García', '321654987', 'analopez@gmail.es', 'Recepcionista', '65432187D', 'Turno de mañana', 'analg', 'alg', 4, 1),
+('Pedro', 'Gómez', 'Martín', '456789321', 'pedrogomez@gmail.es', 'Recepcionista', '54321678E', 'Turno de tarde', 'pedrogm', 'pgm', 5, 1),
+('Laura', 'Díaz', 'Ruiz', '789654321', 'lauradiaz@gmail.es', 'Técnico de Mantenimiento', '43218765F', 'Especializado en electricidad', 'lauradr', 'ldr', 6, 2),
+('David', 'Torres', 'Jiménez', '654123987', 'davidtorres@gmail.es', 'Técnico de Mantenimiento', '32187654G', 'Especializado en fontanería', 'davidtj', 'dtj', 7, 2),
+('Sara', 'Ramírez', 'Sanz', '987321654', 'sararamirez@gmail.es', 'Técnico de Mantenimiento', '21876543H', 'Experiencia en climatización', 'sarars', 'srs', 8, 2),
+('Marcos', 'Vidal', 'Alonso', '123789654', 'marcosvidal@gmail.es', 'Técnico de Mantenimiento', '18765432I', 'Especializado en carpintería', 'marcosva', 'mva', 9, 2),
+('Elena', 'Garrido', 'Ortega', '456321987', 'elenagarrido@gmail.es', 'Técnico de Mantenimiento', '87654321J', 'Experiencia en albañilería', 'elenago', 'ego', 10, 2),
+('Roberto', 'Santos', 'López', '321987654', 'robertosantos@gmail.es', 'Cocinero', '76543218K', 'Especializado en cocina mediterránea', 'robertosl', 'rsl', 11, 3),
+('Lucía', 'Hernández', 'Gómez', '987654321', 'luciahernandez@gmail.es', 'Cocinero', '65432187L', 'Especializada en cocina internacional', 'luciahg', 'lhg', 12, 3),
+('Javier', 'Muñoz', 'Pérez', '321456987', 'javiermunoz@gmail.es', 'Cocinero', '54321876M', 'Experiencia en cocina asiática', 'javiermp', 'jmp', 13, 3),
+('Carmen', 'Jiménez', 'Martínez', '789123456', 'carmenjimenez@gmail.es', 'Cocinero', '43218765N', 'Especializada en repostería', 'carmenjm', 'cjm', 14, 3),
+('Daniel', 'Vega', 'Sánchez', '654789123', 'danielvega@gmail.es', 'Cocinero', '32187654O', 'Experiencia en cocina vegetariana', 'danielvs', 'dvs', 15, 3),
+('Paula', 'López', 'González', '789456321', 'paulalopez@gmail.es', 'Limpiador/a', '21876543P', 'Turno de tarde', 'paulalg', 'plg', 16, 4),
+('Mario', 'Sanz', 'Fernández', '321789654', 'mariosanz@gmail.es', 'Limpiador/a', '18765432Q', 'Turno de noche', 'mariosf', 'msf', 17, 4),
+('Marta', 'Alonso', 'Ruiz', '987456321', 'martaalonso@gmail.es', 'Limpiador/a', '87654321R', 'Turno de mañana', 'martaar', 'mar', 18, 4),
+('Diego', 'Gómez', 'Santos', '123987654', 'diegogomez@gmail.es', 'Limpiador/a', '76543218S', 'Turno de noche', 'diegogs', 'dgs', 19, 4),
+('Natalia', 'Muñoz', 'Jiménez', '654321789', 'nataliamunoz@gmail.es', 'Limpiador/a', '65432187T', 'Turno de tarde', 'nataliamj', 'nmj', 20, 4),
+('Luis', 'Martínez', 'Hernández', '987654123', 'luismartinez@gmail.es', 'Administrativo/a', '54321876U', 'Gestión de nóminas', 'luismh', 'lmh', 21, 5),
+('Eva', 'Gómez', 'Sánchez', '321789456', 'evagomez@gmail.es', 'Administrativo/a', '43218765V', 'Gestión de proveedores', 'evags', 'egs', 22, 5),
+('Pablo', 'Jiménez', 'González', '789654123', 'pablojimenez@gmail.es', 'Administrativo/a', '32187654W', 'Atención al cliente', 'pablojg', 'pjg', 23, 5),
+('Sonia', 'Martín', 'Fernández', '987321456', 'soniamartin@gmail.es', 'Administrativo/a', '21876543X', 'Gestión de reservas', 'soniamf', 'smf', 24, 5),
+('Jorge', 'Sanz', 'López', '654123987', 'jorgesanz@gmail.es', 'Administrativo/a', '18765432Y', 'Contabilidad', 'jorgesl', 'jsl', 25, 5);
+
+
+-- Actualizar la columna 'responsable' con el nombre completo del empleado responsable de cada departamento
+-- La selección del responsable se realiza: el primero de la lista de empleados del departamento
+UPDATE Departamento
+SET responsable = (
+    SELECT TOP 1 CONCAT(nombre, apellido1, apellido2)
+    FROM (
+        SELECT nombre, apellido1, apellido2, ROW_NUMBER() OVER (ORDER BY DepartamentoId) AS rn
+        FROM Empleado
+        WHERE Empleado.DepartamentoId  = Departamento.DepartamentoId 
+    ) AS emp
+    WHERE emp.rn = 1
+);
+
+
+-- Insertar datos del Hotel en la tabla Hotel
+INSERT INTO Hotel (Descripcion, CIF, DireccionId) 
+VALUES 
+('Hotel Solet', 'B57786986', '5');
+
+
+-- Insertar datos de las diferentes Temporadas
+INSERT INTO Temporada (NombreTemporada, FechaInicio, FechaFin, Descripcion, Precio)
+VALUES
+('Alta', '2024-07-01', '2024-08-31', 'A tope', '500.00'),
+('Media1', '2024-04-01', '2024-06-30', 'A ver que tiempo hace', '250.00'),
+('Media2', '2024-09-01', '2024-10-31', 'cerrando el año', '250.00'),
+('Baja', '2024-02-01', '2024-03-31', 'apertura de temporada', '100.00');
+
+
+INSERT INTO Cliente (nombre, apellido1, apellido2, documentId, telefono, mail, nacionalidad, observaciones, tipoCliente, numTarjeta, direccionId)
+VALUES
+    ('Juan', 'Pérez', 'Galán', '12345678A', '123456789', 'juanperez@hotmail.es', 'Española', 'Cliente VIP', '1234 5678 9012 3456', 1),
+    ('María', 'García', 'Martín', '87654321B', '987654321', 'mariagarcia@hotmail.es', 'Española', 'Cliente regular', '9876 5432 1098 7654', 2),
+    ('Pedro', 'Rodríguez', 'Navarro', '56781234C', '555666777', 'pedrorodriguez@hotmail.es', 'Española', 'Cliente VIP', '4567 8901 2345 6789', 3),
+    ('Ana', 'Navarro', 'Sanz', '34567812D', '333444555', 'ananavarro@hotmail.es', 'Española', 'Cliente regular', '6543 2109 8765 4321', 4),
+    ('Javier', 'Fernández', 'Santos', '43218765E', '111222333', 'javierfernandez@hotmail.es', 'Española', 'Cliente VIP', '7890 1234 5678 9012', 5),
+    ('Laura', 'Sánchez', 'Iglesias', '78123456F', '444555666', 'laurasanchez@hotmail.es', 'Española', 'Cliente regular', '2109 8765 4321 0987', 6),
+    ('Carlos', 'González', 'Torres', '13579246G', '777888999', 'carlosgonzalez@hotmail.es', 'Española', 'Cliente regular', '0987 6543 2109 8765', 7),
+    ('Sofía', 'Martín', 'Bravo', '97531864H', '666777888', 'sofiamartin@hotmail.es', 'Española', 'Cliente VIP', '7654 3210 9876 5432', 8),
+    ('Luis', 'Hernández', 'Ceballos', '86429751I', '888999000', 'luishernandez@hotmail.es', 'Española', 'Cliente regular', '5432 1098 7654 3210', 9),
+    ('Elena', 'Díaz', 'Casado', '75318642J', '999000111', 'elenadiaz@hotmail.es', 'Española', 'Cliente regular', '3210 9876 5432 1098', 10),
+    ('Diego', 'Ruiz', 'Hidalgo', '24681357K', '222333444', 'diegoruiz@hotmail.es', 'Española', 'Cliente VIP', '2109 8765 4321 0987', 11),
+    ('Lucía', 'Jiménez', 'Martínez', '15936472L', '333444555', 'luciajimenez@hotmail.es', 'Española', 'Cliente regular', '9876 5432 1098 7654', 12),
+    ('Marcos', 'Martín', 'Vallés', '63724591M', '444555666', 'marcosmartin@hotmail.es', 'Española', 'Cliente VIP', '8765 4321 0987 6543', 13),
+    ('Carmen', 'Gutiérrez', 'Miranda', '47281963N', '555666777', 'carmengutierrez@hotmail.es', 'Española', 'Cliente regular', '7654 3210 9876 5432', 14),
+    ('Rubén', 'López', 'Palomo', '92637418O', '666777888', 'rubenlopez@hotmail.es', 'Española', 'Cliente VIP', '6543 2109 8765 4321', 15),
+    ('Marta', 'Martínez', 'Guerrero', '18364729P', '777888999', 'martamartinez@hotmail.es', 'Española', 'Cliente regular', '5432 1098 7654 3210', 16),
+    ('Adrián', 'Sánchez', 'Calderon', '72936184Q', '888999000', 'adriansanchez@hotmail.es', 'Española', 'Cliente VIP', '4321 0987 6543 2109', 17),
+    ('Natalia', 'Gómez', 'Soto', '36294817R', '999000111', 'nataliagomez@hotmail.es', 'Española', 'Cliente regular', '3210 9876 5432 1098', 18),
+    ('Óscar', 'Fernández', 'Luque', '94817263S', '111222333', 'oscarfernandez@hotmail.es', 'Española', 'Cliente VIP', '2109 8765 4321 0987', 19),
+    ('Sara', 'Martínez', 'Otero', '81726349T', '222333444', 'saramartinez@hotmail.es', 'Española', 'Cliente regular', '0987 6543 2109 8765', 20),
+    ('Iván', 'López', 'Suárez', '26394718U', '333444555', 'ivanlopez@hotmail.es', 'Española', 'Cliente VIP', '9876 5432 1098 7654', 21),
+    ('Paula', 'García', 'Cabrerizo', '63184927V', '444555666', 'paulagarcia@hotmail.es', 'Española', 'Cliente regular', '8765 4321 0987 6543', 22),
+    ('Hugo', 'Sánchez', 'Vera', '41872936W', '555666777', 'hugosanchez@hotmail.es', 'Española', 'Cliente VIP', '7654 3210 9876 5432', 23),
+    ('Alba', 'Fernández', 'Pimentón', '92736481X', '666777888', 'albafernandez@hotmail.es', 'Española', 'Cliente regular', '6543 2109 8765 4321', 24),
+    ('Mateo', 'Martínez', 'Montbui', '29817364Y', '777888999', 'mateomartinez@hotmail.es', 'Española', 'Cliente VIP', '5432 1098 7654 3210', 25),
+    ('Julia', 'Gómez', 'Baños', '73649182Z', '888999000', 'juliagomez@hotmail.es', 'Española', 'Cliente regular', '4321 0987 6543 2109', 26),
+    ('Alejandro', 'Sánchez', 'Peralta', '49182736A', '999000111', 'alejandrosanchez@hotmail.es', 'Española', 'Cliente VIP', '3210 9876 5432 1098', 27),
+    ('Lucas', 'Martínez', 'Bote', '82736491B', '111222333', 'lucasmartinez@hotmail.es', 'Española', 'Cliente regular', '2109 8765 4321 0987', 28),
+    ('Emma', 'López', 'Parra', '36491827C', '222333444', 'emmalopez@hotmail.es', 'Española', 'Cliente VIP', '0987 6543 2109 8765', 29),
+    ('Daniel', 'García', 'Oliver', '49182736D', '333444555', 'danielgarcia@hotmail.es', 'Española', 'Cliente regular', '9876 5432 1098 7654', 30),
+    ('Valeria', 'Fernández', 'Ximenis', '91827364E', '444555666', 'valeriafernandez@hotmail.es', 'Española', 'Cliente VIP', '8765 4321 0987 6543', 31),
+    ('Pablo', 'Sánchez', 'Zaforteza', '27364918F', '555666777', 'pablosanchez@hotmail.es', 'Española', 'Cliente regular', '7654 3210 9876 5432', 32),
+    ('Noa', 'Martínez', 'De la Rosa', '36491827G', '666777888', 'noamartinez@hotmail.es', 'Española', 'Cliente VIP', '6543 2109 8765 4321', 33),
+    ('Alonso', 'Gómez', 'Gual de Torrella', '64918273H', '777888999', 'alonsogomez@hotmail.es', 'Española', 'Cliente regular', '5432 1098 7654 3210', 34),
+    ('Aitana', 'Sánchez', 'Alchote', '91827364I', '888999000', 'aitanasanchez@hotmail.es', 'Española', 'Cliente VIP', '4321 0987 6543 2109', 35);
+
+	
+-- Insertar servicios disponibles para los clientes
+INSERT INTO Servicio (NombreServicio, Descripcion, Precio, ClienteId)
+VALUES
+('Lavanderia', 'Lavado, secado y planchado, precio por bolsa de ropa sucia', '60.00', '5'),
+('Restaurante', 'Cocina mediterranea y noches tematicas', '150.00', '5'),
+('Minibar', 'Aguas, bebidas alcoholicas, cacahuetes', '50', '5'),
+('Spa', 'Sauna y masaje', '250', '5');
+
+
+-- Insertar Tipos de alojamientos disponibles precio día.
+INSERT INTO TipoAlojamiento (NombreAlojamiento, Descripcion, Precio)
+VALUES
+('Media Pensión', 'Incluye desayuno', '20.00'),
+('Pensión Completa', 'Incluye desayuno, comida y cena en horarios de restaurante', '80.00'),
+('Todo Incluido', 'Pensión Completa + debidas y cocteles en Bar, restaurante y chiringuito de la piscina', '200');
+
+
+-- Insertar Habitaciones del hotel con precio día.
+INSERT INTO Habitacion (numHab, TipoHabitacion, Descripcion, NumeroOcupantes, Estado, Precio)
+VALUES
+('101', 'Individual', 'Primera planta, fachada norte', '2', 'Libre', '100.00'),
+('102', 'Individual', 'Primera planta, fachada sur', '2', 'Ocupada', '120.00'),
+('103', 'Doble', 'Primera planta, fachada norte', '4', 'Libre', '150.00'),
+('104', 'Doble', 'Primera planta, fachada sur', '4', 'Ocupada', '170.00'),
+('205', 'Individual', 'Segunda planta, fachada norte', '2', 'Limpieza', '110.00'),
+('206', 'Individual', 'Segunda planta, fachada sur', '2', 'Limpieza', '130.00'),
+('207', 'Doble', 'Segunda planta, fachada norte', '4', 'Libre', '140.00'),
+('208', 'Doble', 'Segunda planta, fachada sur', '4', 'Ocupada', '180.00'),
+('309', 'Suite', 'Lujo', '4', 'Libre', '400.00'),
+('310', 'Suite', 'Lujo + Yakuzzi', '4', 'Ocupada', '600.00');
+
+
+--Insertar Reservar para varias temporadas
+INSERT INTO Reserva (Precio, ClienteId, TipoAlojamientoId, TemporadaId, HabitaciónId, numPers, FechaReserva, FechaEntrada, FechaSalida, Estado)
+VALUES
+('650.00', '2', '1', '5', '1', '2', '2023-11-11', '2024-05-19', '2024-05-23', '1'),
+('950.00', '4', '2', '5', '5', '2', '2024-01-05', '2024-06-24', '2024-06-29', '1'),
+('1050.00', '5', '3', '4', '3', '4', '2024-02-15', '2024-07-19', '2024-07-24', '1'),
+('3550.00', '10', '3', '4', '9', '4', '2024-12-07', '2024-08-05', '2024-08-11', '1'),
+('250.00', '20', '1', '6', '6', '2', '2024-01-05', '2024-09-15', '2024-09-17', '1'),
+('2350.00', '18', '3', '4', '10', '2', '2024-02-05', '2024-08-19', '2024-08-23', '1'),
+('1000.00', '30', '2', '4', '4', '4', '2023-09-25', '2024-07-07', '2024-07-12', '1'),
+('690.00', '7', '1', '6', '2', '2', '2024-01-08', '2024-10-10', '2024-10-15', '1'),
+('760.00', '17', '2', '5', '3', '4', '2024-02-22', '2024-06-01', '2024-06-05', '1'),
+('964.00', '26', '2', '6', '7', '3', '2023-11-13', '2024-09-09', '2024-09-14', '1'),
+('640.00', '21', '2', '4', '6', '1', '2024-01-05', '2024-08-19', '2024-08-21', '1'),
+('980.00', '31', '2', '5', '5', '2', '2024-04-01', '2024-05-10', '2024-05-15', '1'),
+('1010.00', '13', '3', '4', '8', '4', '2023-09-15', '2024-08-20', '2024-08-26', '1'),
+('4500.00', '14', '3', '4', '10', '3', '2024-01-19', '2024-07-07', '2024-07-12', '1'),
+('630.00', '8', '2', '6', '4', '3', '2024-01-05', '2024-10-19', '2024-10-26', '1'),
+('6200.00', '9', '3', '4', '10', '2', '2024-02-16', '2024-08-08', '2024-08-15', '1'),
+('640.00', '1', '1', '4', '1', '1', '2024-03-13', '2024-07-01', '2024-07-04', '1'),
+('320.00', '3', '1', '6', '2', '1', '2023-12-07', '2024-09-25', '2024-09-26', '1'),
+('720.00', '11', '2', '5', '2', '2', '2023-12-21', '2024-06-01', '2024-06-04', '1'),
+('440.00', '12', '1', '5', '3', '4', '2024-01-22', '2024-06-05', '2024-06-07', '1'),
+('560.00', '22', '1', '4', '1', '2', '2024-01-31', '2024-08-10', '2024-08-13', '1'),
+('320.00', '23', '1', '6', '6', '1', '2024-02-20', '2024-10-29', '2024-10-31', '1'),
+('2980.00', '32', '3', '4', '9', '4', '2024-03-01', '2024-08-15', '2024-08-21', '1');
+('720.00', '11', '2', '5', '2', '2', '2022-12-21', '2023-06-01', '2023-06-04', '1'),
+('440.00', '12', '1', '5', '3', '4', '2023-01-22', '2023-06-05', '2023-06-07', '1'),
+('560.00', '22', '1', '4', '1', '2', '2023-01-31', '2023-08-10', '2023-08-13', '1'),
+('320.00', '23', '1', '6', '6', '1', '2023-02-20', '2023-10-29', '2023-10-31', '1'),
+('2980.00', '32', '3', '4', '9', '4', '2023-03-01', '2023-08-15', '2023-08-21', '1');   
+
+
+--Insertar facturas de reservas antiguas
+INSERT INTO Factura (NombreTemporada, FechaFactura, Concepto, Total, ReservaId)
+VALUES
+('Media1', '2023-06-04', 'Estancia', '720.00', '31'),
+('Media1', '2023-06-07', 'Estancia', '440.00', '32'),
+('Alta', '2023-08-13', 'Estancia', '560.00', '33'),
+('Media2', '2023-10-31', 'Estancia', '320.00', '34'),
+('Alta', '2023-08-21', 'Estancia', '2980.00', '35');

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clientes>
+  <Cliente>
+    <ClienteId>1</ClienteId>
+    <Nombre>Juan</Nombre>
+    <Apellido1>Pérez</Apellido1>
+    <Apellido2>Galán</Apellido2>
+    <DocumentId>12345678A</DocumentId>
+    <Telefono>123456789</Telefono>
+    <Mail>juanperez@hotmail.es</Mail>
+    <Nacionalidad>Española</Nacionalidad>
+    <Observaciones />
+    <TipoCliente>Cliente VIP</TipoCliente>
+    <numTarjeta>1234 5678 9012 3456</numTarjeta>
+    <DireccionId>1</DireccionId>
+    <Direccion>
+      <DireccionId>1</DireccionId>
+      <Calle1>Carrer Major</Calle1>
+      <Calle2>12</Calle2>
+      <CP>08001</CP>
+      <Localidad>Barcelona</Localidad>
+      <Pais>España</Pais>
+    </Direccion>
+  </Cliente>
+</Clientes>
