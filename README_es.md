@@ -164,28 +164,6 @@ HotelSol es un Sistema de Gestión Hotelera (PMS) básico diseñado para gestion
    - Comprobar conectividad de red
    - Validar permisos de usuario
 
-### Despliegue en Producción
-
-1. **Lista de Verificación Pre-despliegue**
-
-   - Backup de base de datos
-   - Revisión de configuración
-   - Auditoría de seguridad
-   - Pruebas de rendimiento
-
-2. **Proceso de Lanzamiento**
-
-   - Etiquetado de versiones
-   - Notas de versión
-   - Guía de instalación
-   - Procedimientos de backup
-
-3. **Post-despliegue**
-   - Configuración de monitoreo
-   - Seguimiento de rendimiento
-   - Recopilación de feedback de usuarios
-   - Calendario de mantenimiento regular
-
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia Universal Creative Commons CC0 1.0. Esto significa que:

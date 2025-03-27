@@ -166,29 +166,6 @@ HotelSol is a Basic Property Management System (PMS) Project designed to streaml
    - Check network connectivity
    - Validate user permissions
 
-### Production Deployment
-
-1. **Pre-deployment Checklist**
-
-   - Database backup
-   - Configuration review
-   - Security audit
-   - Performance testing
-
-2. **Release Process**
-
-   - Version tagging
-   - Release notes
-   - Installation guide
-   - Backup procedures
-
-3. **Post-deployment**
-
-   - Monitoring setup
-   - Performance tracking
-   - User feedback collection
-   - Regular maintenance schedule
-
 ## License
 
 This project is licensed under the Creative Commons CC0 1.0 Universal License. This means that:
